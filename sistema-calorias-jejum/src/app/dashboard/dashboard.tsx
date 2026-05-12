@@ -1,5 +1,6 @@
 "use client";
 
+import MealsCRUD from "@/components/MealsCRUD";
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useAuth } from "@/contexts/AuthContext";
@@ -50,7 +51,7 @@ export default function DashboardPage() {
             </header>
 
             <main>
-                <p className="text-gray-600">Aqui entrarão os gráficos de resumo semanal e os cards de registro.</p>
+                <MealsCRUD />
             </main>
         </div>
     );
